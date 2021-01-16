@@ -1,0 +1,8 @@
+.row.testimoniales
+            if(testimoniales.length > 0)
+                each testimonio in testimoniales
+                    .col-md-6.col-lg-4.mb-4
+                        .card-body
+                            blockquote.blockquote
+                            p.mb-0 #{testimonio.mensaje}
+                            footer.blockquote-footer #{testimonio.nombre}
